@@ -6,10 +6,10 @@ module "bucket" {
 }
 
 module "vpc" {
-  source = "./modules/VPC"
-  network_name = var.vpc_name
-  subnet1_name = var.subnet1_name
-
+  source        = "./modules/VPC"
+  network_name  = var.vpc_name
+  subnet1_name  = var.subnet1_name
+  subnet1_cidr  = var.subnet1_cidr
 }
 
 module "vm" {
