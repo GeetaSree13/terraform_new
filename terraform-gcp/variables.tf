@@ -16,11 +16,6 @@ variable "project_id" {
   
 }
 
-variable "credentials_file" {
-  description = "The path to the service account credentials file"
-  type        = string
-  
-}
 
 variable "vpc_name" {
   description = "The name of the VPC network"
