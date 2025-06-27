@@ -13,4 +13,4 @@ display_name = "My Service Account"
 sa_roles     = [
   "roles/compute.admin"]
 sa_name = "my-service-account"
-credentials_file = "/home/atlantis/.atlantis/repos/GeetaSree13/Terraform_assignment/creds.json"
+credentials_file = "/home/atlantis/.atlantis/repos/GeetaSree13/terraform_new/creds.json"
