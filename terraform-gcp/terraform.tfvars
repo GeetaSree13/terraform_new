@@ -1,4 +1,4 @@
-#variables for terraform-gcp
+#variables for terraform-gcp module
 project_id = "tonal-benefit-462606-b8"
 region      = "asia-southeast1"
 zone        = "asia-southeast1-a"
