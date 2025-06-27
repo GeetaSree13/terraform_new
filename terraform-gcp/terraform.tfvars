@@ -8,7 +8,7 @@ vpc_name    = "my-vpc-network"
 subnet1_name = "my-subnet-1"
 vm_name     = "terraform-instance"
 machine_type = "e2-medium"
-account_id   = "sa-id"
+account_id   = "my-service-account-01"
 display_name = "My Service Account"
 sa_roles     = [
   "roles/compute.admin"]
