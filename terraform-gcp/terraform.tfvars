@@ -2,7 +2,7 @@
 project_id = "tonal-benefit-462606-b8"
 region      = "asia-southeast1"
 zone        = "asia-southeast1-a"
-bucket_name = "bucket-created"
+bucket_name = "bucket-geeta13"
 location    = "asia-southeast1"
 vpc_name    = "my-vpc-network"
 subnet1_name = "my-subnet-1"
@@ -13,3 +13,4 @@ display_name = "My Service Account"
 sa_roles     = [
   "roles/compute.admin"]
 sa_name = "my-service-account"
+subnet1_cidr = "10.0.1.0/24"
