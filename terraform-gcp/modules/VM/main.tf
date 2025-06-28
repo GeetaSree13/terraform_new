@@ -3,6 +3,7 @@ resource "google_compute_instance" "vm_instance" {
     machine_type = var.machine_type
     zone = var.zone
 
+
 boot_disk {
   initialize_params {
     image = "projects/rocky-linux-cloud/global/images/family/rocky-linux-9"
@@ -31,6 +32,10 @@ resource "google_compute_firewall" "allowing-http" {
     source_ranges = ["0.0.0.0/0"]
     target_tags   = ["http-server"]
 
+    lifecycle {
+      create_before_destroy = true
+    }
+
 }
 
 resource "google_compute_firewall" "allowing-https" {
@@ -45,5 +50,9 @@ resource "google_compute_firewall" "allowing-https" {
     direction     = "INGRESS"
     source_ranges = ["0.0.0.0/0"]
     target_tags   = ["https-server"]
+
+    lifecycle {
+        create_before_destroy = true
+    }
 
 }
