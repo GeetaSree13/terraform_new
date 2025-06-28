@@ -6,7 +6,6 @@
 crash.log
 
 # Ignore variable overrides
-*.tfvars
 *.tfvars.json
 
 # Ignore terraform plan output
