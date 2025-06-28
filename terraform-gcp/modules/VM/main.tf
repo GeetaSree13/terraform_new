@@ -31,6 +31,10 @@ resource "google_compute_firewall" "allowing-http" {
     source_ranges = ["0.0.0.0/0"]
     target_tags   = ["http-server"]
 
+    lifecycle {
+      create_before_destroy = true
+    }
+
 }
 
 resource "google_compute_firewall" "allowing-https" {
@@ -45,5 +49,9 @@ resource "google_compute_firewall" "allowing-https" {
     direction     = "INGRESS"
     source_ranges = ["0.0.0.0/0"]
     target_tags   = ["https-server"]
+
+    lifecycle {
+        create_before_destroy = true
+    }
 
 }
