@@ -3,6 +3,10 @@ resource "google_compute_instance" "vm_instance" {
     machine_type = var.machine_type
     zone = var.zone
 
+    lifecycle {
+        create_before_destroy = true
+    }
+
 boot_disk {
   initialize_params {
     image = "projects/rocky-linux-cloud/global/images/family/rocky-linux-9"
