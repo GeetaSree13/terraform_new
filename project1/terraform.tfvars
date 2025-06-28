@@ -11,7 +11,7 @@ region      = "asia-southeast1"
 zone        = "asia-southeast1-a"
 bucket_name = [
   "bucket-geeta13-bucket1",
-  "bucket-geeta13-bucket2",
+  #"bucket-geeta13-bucket2",
   "bucket-geeta13-bucket3"
   ]
 location    = "asia-southeast1"
