@@ -32,3 +32,6 @@ module "service_account" {
   project_id   = var.project_id
   count = var.resources["service_account"] ? 1 : 0
 }
+
+
+####
