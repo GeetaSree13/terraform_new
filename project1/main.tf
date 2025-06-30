@@ -7,7 +7,7 @@ module "bucket" {
 }
 
 module "vpc" {
-  source        = "../terraform-gcp/modules/vpc"
+  source        = "../terraform-gcp/modules/VPC"
   network_name  = var.vpc_name
   subnet1_name  = var.subnet1_name
   subnet1_cidr  = var.subnet1_cidr
@@ -16,7 +16,7 @@ module "vpc" {
 }
 
 module "vm" {
-  source = "../terraform-gcp/modules/vm"
+  source = "../terraform-gcp/modules/VM"
   vm_name = var.vm_name
   machine_type = var.machine_type
   zone = var.zone
