@@ -7,14 +7,23 @@ repos:
     autoplan:
       enabled: true
       when_modified: ["*.tf", "*.tfvars"]
- 
+    
+    dir: project1
+  - id: https://github.com/GeetaSree13/terraform_new
+    workflow: custom_workflow
+    allowed_overrides: [workflow]
+    allow_custom_workflows: true
+    autoplan:
+      enabled: true
+      when_modified: ["*.tf", "*.tfvars"]
+    dir: project2
+
 workflows:
-  default:
+  custom_workflow:
     plan:
       steps:
         - run: rm -rf .terraform .terraform.lock.hcl
-        - run: |
-            terraform plan -out=tfplan
+        - run: terraform plan -out=tfplan
     apply:
       steps:
         - run: terraform apply tfplan
