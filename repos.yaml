@@ -1,22 +1,30 @@
 version: 3
 repos:
-  - id: github.com/GeetaSree13/terraform_new
+  - id: https://github.com/GeetaSree13/terraform_new
     workflow: custom_workflow
     allowed_overrides: [workflow]
     allow_custom_workflows: true
     autoplan:
       enabled: true
       when_modified: ["*.tf", "*.tfvars"]
-      dirs:
-        - project1
-        - project2
+    dir: project1
+
+  - id: https://github.com/GeetaSree13/terraform_new
+    workflow: custom_workflow
+    allowed_overrides: [workflow]
+    allow_custom_workflows: true
+    autoplan:
+      enabled: true
+      when_modified: ["*.tf", "*.tfvars"]
+    dir: project2
+
+# Make sure terraform-gcp is not included here!
 
 workflows:
   custom_workflow:
     plan:
       steps:
         - run: rm -rf .terraform .terraform.lock.hcl
-        - run: terraform init
         - run: terraform plan -out=tfplan
     apply:
       steps:
