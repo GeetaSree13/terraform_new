@@ -6,6 +6,7 @@ module "bucket" {
   
 }
 
+#
 module "vpc" {
   source        = "../terraform-gcp/modules/VPC"
   network_name  = var.vpc_name
