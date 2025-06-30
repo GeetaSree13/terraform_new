@@ -1,7 +1,5 @@
 provider "google" {
   credentials = file("/gcp-creds2/creds.json")
-  project     = var.project_id
-  region      = var.region
+  project     = "stable-parsec-462607-h1"
+  region      = "asia-southeast1"
 }
-
-##
