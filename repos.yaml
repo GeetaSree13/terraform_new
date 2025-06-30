@@ -7,16 +7,9 @@ repos:
     autoplan:
       enabled: true
       when_modified: ["*.tf", "*.tfvars"]
-      dir: project1
-
-  - id: https://github.com/GeetaSree13/terraform_new
-    workflow: custom_workflow
-    allowed_overrides: [workflow]
-    allow_custom_workflows: true
-    autoplan:
-      enabled: true
-      when_modified: ["*.tf", "*.tfvars"]
-      dir: project2
+      dirs:
+        - project1
+        - project2
 
 workflows:
   custom_workflow:
