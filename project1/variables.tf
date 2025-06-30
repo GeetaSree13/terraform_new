@@ -1,6 +1,6 @@
 variable "bucket_name" {
   description = "names of the buckets created"
-  type        = string
+  type        = list(string)
   
 }
 
