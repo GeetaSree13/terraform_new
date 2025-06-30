@@ -18,7 +18,7 @@ repos:
       when_modified: ["*.tf", "*.tfvars"]
     dir: project2
 
-# Make sure terraform-gcp is not included here!
+# Make sure terraform-gcp is not included here!####
 
 workflows:
   custom_workflow:
