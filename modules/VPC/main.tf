@@ -13,4 +13,3 @@ resource "google_compute_subnetwork" "subnet1" {
     
 }
 
-#
