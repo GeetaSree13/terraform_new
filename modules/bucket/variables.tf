@@ -1,7 +1,6 @@
 variable "bucket_name" {
-  description = "The name of the storage bucket"
-  type        = string
-  
+  description = "The names of the storage buckets"
+  type        = list(string)
 }
 
 variable "location" {
