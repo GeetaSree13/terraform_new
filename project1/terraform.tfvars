@@ -5,7 +5,6 @@ resources = {
   "vpc" = false
 }
 
-#variables for terraform-gcp module setup
 
 project_id = "tonal-benefit-462606-b8"
 region      = "asia-southeast1"
