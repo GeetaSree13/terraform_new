@@ -33,5 +33,3 @@ module "service_account" {
   count = var.resources["service_account"] ? 1 : 0
 }
 
-
-####
