@@ -6,6 +6,5 @@ variable "bucket_name" {
 variable "location" {
   description = "The location of the storage bucket"
   type        = string
-  default     = "asia-southeast1"
   
 }

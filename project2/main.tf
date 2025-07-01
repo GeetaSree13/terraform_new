@@ -7,7 +7,6 @@ module "bucket" {
   
 }
 
-#
 module "vpc" {
   source        = "../modules/VPC"
   network_name  = var.vpc_name
@@ -23,6 +22,7 @@ module "vm" {
   vm_name = var.vm_name
   machine_type = var.machine_type
   zone = var.zone
+
 }
 
 /*

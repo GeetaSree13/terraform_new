@@ -87,3 +87,4 @@ variable "subnet1_cidr" {
   description = "The CIDR range for the first subnet"
   type        = string
 }
+
