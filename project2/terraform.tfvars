@@ -1,11 +1,11 @@
 #variables for terraform-gcp module setup
 
-resources = {
+/*resources = {
   "bucket" = false
   "vm"     = true
   "service_account" = false
   "vpc" = false
-}
+}*/
 #
 
 

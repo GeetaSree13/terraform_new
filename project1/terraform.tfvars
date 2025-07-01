@@ -1,9 +1,9 @@
-resources = {
+/*resources = {
   "bucket" = true
   "vm"     = false
   "service_account" = false
   "vpc" = false
-}
+}*/
 
 
 project_id = "tonal-benefit-462606-b8"
