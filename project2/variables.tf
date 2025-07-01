@@ -87,9 +87,3 @@ variable "subnet1_cidr" {
   description = "The CIDR range for the first subnet"
   type        = string
 }
-
-variable "resources" {
-  description = "Map to control which modules to create"
-  type        = map(bool)
-  
-}
