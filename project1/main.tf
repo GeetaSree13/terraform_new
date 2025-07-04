@@ -2,10 +2,11 @@ module "bucket" {
   source       = "../modules/bucket"
   bucket_name = var.bucket_name
   location    = var.location
-  count = var.resources["bucket"] ? 1 : 0
+
   
 }
 
+/*
 module "vpc" {
   source        = "../modules/VPC"
   network_name  = var.vpc_name
@@ -34,4 +35,5 @@ module "service_account" {
   count = var.resources["service_account"] ? 1 : 0
 
 }
-
+*/
+#

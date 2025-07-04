@@ -1,18 +1,18 @@
-resources = {
+/*resources = {
   "bucket" = true
   "vm"     = false
   "service_account" = false
   "vpc" = false
-}
-
+}*/
+##
 
 project_id = "tonal-benefit-462606-b8"
 region      = "asia-southeast1"
 zone        = "asia-southeast1-a"
 bucket_name = [
-  #"bucket-geeta13-bucket1",
-  "bucket-geeta13-bucket2",
-  "bucket-geeta13-bucket3"
+  "bucket-geeta13-bucket01",
+  #"bucket-geeta13-bucket02",
+  "bucket-geeta13-bucket03"
   ]
 location    = "asia-southeast1"
 vpc_name    = "my-vpc-network1-project1"
